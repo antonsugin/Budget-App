@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/antonsugin/Budget-App/issues"
   },
-  "homepage": "https://github.com/antonsugin/Budget-App#readme"
+  "homepage": "https://github.com/antonsugin/Budget-App#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
 }
