@@ -1,0 +1,25 @@
+body {
+    /* min-height: 100%; */
+}
+
+
+header {
+    background-color: lightgray;
+    /* min-height: 40%; */
+}
+
+.user {
+    background-color: lightpink;
+}
+
+.current-salary {
+    background-color: lightseagreen;
+}
+
+.remain-income {
+    background-color: lightskyblue;
+}
+
+.total-budget {
+    background-color: lime;
+}

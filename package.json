@@ -1,0 +1,19 @@
+{
+  "name": "budget-app",
+  "version": "1.0.0",
+  "description": "simple budget management app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antonsugin/Budget-App.git"
+  },
+  "author": "Anton Sugin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antonsugin/Budget-App/issues"
+  },
+  "homepage": "https://github.com/antonsugin/Budget-App#readme"
+}
