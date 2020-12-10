@@ -11,10 +11,6 @@ html {
 body {
   box-sizing: border-box; }
 
-header {
-  background-color: lightgray;
-  /* min-height: 40%; */ }
-
 .user {
   background-color: lightpink; }
 
@@ -22,7 +18,9 @@ header {
   background-color: lightseagreen; }
 
 .remain-income {
+  padding: 2rem;
   background-color: lightskyblue; }
 
 .total-budget {
+  padding: 2rem;
   background-color: lime; }

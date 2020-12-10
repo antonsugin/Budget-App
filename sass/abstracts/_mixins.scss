@@ -1,0 +1,12 @@
+
+@mixin salar {
+    .current-salary {
+        background-color: lightseagreen;
+    }
+}
+
+@mixin changeParameters($color) {
+    padding: 2rem;
+    background-color: $color;
+}
+
