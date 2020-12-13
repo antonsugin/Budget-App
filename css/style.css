@@ -11,6 +11,19 @@ html {
 body {
   box-sizing: border-box; }
 
+.payment {
+  color: blanchedalmond;
+  font-size: 3.5rem;
+  display: flex;
+  align-items: center; }
+  .payment__icon {
+    width: 4%; }
+  .payment__icon img {
+    width: 100%; }
+
+main {
+  background-color: blue; }
+
 .user {
   background-color: lightpink; }
 
