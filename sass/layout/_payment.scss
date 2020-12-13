@@ -1,15 +1,15 @@
-// .payment > * {
-//     color: wheat;
-//     font-size: 4rem;
-    
-// }
+
 
 .payment {
     color: blanchedalmond;
     font-size: 3.5rem;
-    display: flex;
-    // justify-content: center;
-    align-items: center;
+    padding-left: .75em;
+    
+
+    &--layout {
+        display: flex;
+        align-items: center;
+    }
 
     &__icon {
         width: 4%;
@@ -18,6 +18,11 @@
     &__icon img {
         width: 100%;
     }
+}
+
+.payment > * {
+    padding-right: .5em;
+    
 }
 
 .payment__icon {

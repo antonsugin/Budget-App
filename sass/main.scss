@@ -8,9 +8,12 @@
 @import "base/typography";
 @import "base/utilities";
 
-@import "components/payment";
+// @import "components/payment";
 
 @import "layout/main";
+@import "layout/payment";
+@import "layout/initial";
+
 
 @import "pages/home";
 

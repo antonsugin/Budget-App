@@ -11,18 +11,37 @@ html {
 body {
   box-sizing: border-box; }
 
+main {
+  background-color: blue;
+  margin: 4em; }
+
 .payment {
   color: blanchedalmond;
   font-size: 3.5rem;
-  display: flex;
-  align-items: center; }
+  padding-left: .75em; }
+  .payment--layout {
+    display: flex;
+    align-items: center; }
   .payment__icon {
     width: 4%; }
   .payment__icon img {
     width: 100%; }
 
-main {
-  background-color: blue; }
+.payment > * {
+  padding-right: .5em; }
+
+.initial--wrapper {
+  width: 100%;
+  margin-bottom: 5rem; }
+
+.initial {
+  font-size: 2rem;
+  padding: .5em;
+  background-color: wheat;
+  text-align: center; }
+  .initial--layout {
+    width: 50%;
+    margin: 0 auto; }
 
 .user {
   background-color: lightpink; }
