@@ -24,6 +24,7 @@ main {
   color: blanchedalmond;
   font-size: 3.5rem; }
   .payment--layout {
+    margin-top: 1em;
     display: flex;
     align-items: center;
     justify-content: center; }
@@ -35,9 +36,15 @@ main {
 .payment > * {
   padding-right: .5em; }
 
+.payments--total {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 5em; }
+
 .initial--wrapper {
   width: 100%;
-  margin-bottom: 5rem; }
+  margin-bottom: 10em; }
 
 .initial {
   font-size: 2rem;
@@ -48,15 +55,40 @@ main {
     width: 50%;
     margin: 0 auto; }
 
-.payment-1 {
-  background-color: black; }
+.asset {
+  color: blanchedalmond;
+  font-size: 3.5rem; }
+  .asset--layout {
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .asset__icon {
+    width: 4%; }
+  .asset__icon img {
+    width: 100%; }
 
-.payments--total,
+.asset > * {
+  padding-right: .5em; }
+
 .assets--total {
   color: white;
   font-size: 1.5rem;
   text-align: center;
-  display: inline-block; }
+  margin-top: 5em; }
+
+.spend--wrapper {
+  width: 100%;
+  margin-top: 10em; }
+
+.spend {
+  font-size: 2rem;
+  padding: .5em;
+  background-color: wheat;
+  text-align: center; }
+  .spend--layout {
+    width: 50%;
+    margin: 0 auto; }
 
 .user {
   background-color: lightpink; }

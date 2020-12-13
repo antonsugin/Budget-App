@@ -11,9 +11,10 @@
 // @import "components/payment";
 
 @import "layout/main";
-@import "layout/payment";
+@import "layout/payments";
 @import "layout/initial";
 @import "layout/assets";
+@import "layout/spend";
 
 
 @import "pages/home";
@@ -22,18 +23,7 @@
 
 
 
-.payments,
-.assets {
-    
-}
 
-.payments--total,
-.assets--total {
-    color: white;
-    font-size: 1.5rem;
-    text-align: center;
-    display: inline-block;
-}
 
 
 
