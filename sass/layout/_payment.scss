@@ -1,14 +1,14 @@
 
-
 .payment {
     color: blanchedalmond;
     font-size: 3.5rem;
-    padding-left: .75em;
+    // padding-left: .75em;
     
 
     &--layout {
         display: flex;
         align-items: center;
+        justify-content: center;
     }
 
     &__icon {
@@ -25,7 +25,3 @@
     
 }
 
-.payment__icon {
-    // width: 4%;
-    // height: 20%;
-}
