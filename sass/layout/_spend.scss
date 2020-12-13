@@ -14,5 +14,13 @@
         width: 50%;
         margin: 0 auto;
     }
+
+    &__amount {
+        font-size: $amount-fs;
+    }
+
+    &__icon {
+        font-size: $amount-fs;
+    }
 }
 

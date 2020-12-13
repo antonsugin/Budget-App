@@ -1,11 +1,11 @@
 
 .initial--wrapper {
     width: 100%;
-    margin-bottom: 10em;
+    // margin-bottom: 10em;
 }
 
 .initial {
-    font-size: 2rem;
+    font-size: 2.5rem;
     padding: .5em;
     background-color: wheat;
     text-align: center;
@@ -13,5 +13,13 @@
     &--layout {
         width: 50%;
         margin: 0 auto;
+    }
+
+    &__amount {
+        font-size: $amount-fs;
+    }
+
+    &__icon {
+        font-size: $amount-fs;
     }
 }

@@ -1,0 +1,43 @@
+.user {
+    font-size: 4rem;
+    text-align: center;
+    padding: 1em 0;
+
+    &__name {
+        font-size: 5rem;
+    }
+}
+
+
+.current-salary {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 2em;
+
+    &__amount {
+        font-size: $amount-fs;
+    }
+
+    &__icon {
+        font-size: $amount-fs;
+    }
+}
+
+
+.remain-income {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 2em;
+
+    &__amount {
+        font-size: $amount-fs;
+    }
+
+    &__icon {
+        font-size: $amount-fs; 
+    }
+}
+
+
+
+
