@@ -71,9 +71,15 @@ main {
 
 .payments--total {
   color: white;
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-align: center;
   margin-top: 5em; }
+
+.payments__amount {
+  font-size: 3.5rem; }
+
+.payments__icon {
+  font-size: 3.5rem; }
 
 .initial--wrapper {
   width: 100%; }
@@ -109,9 +115,15 @@ main {
 
 .assets--total {
   color: white;
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-align: center;
   margin-top: 5em; }
+
+.assets__amount {
+  font-size: 3.5rem; }
+
+.assets__icon {
+  font-size: 3.5rem; }
 
 .spend--wrapper {
   width: 100%;
