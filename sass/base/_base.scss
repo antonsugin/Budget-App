@@ -18,6 +18,7 @@ body {
 .header-wrapper {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 main {
@@ -30,5 +31,6 @@ main {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 }
 
