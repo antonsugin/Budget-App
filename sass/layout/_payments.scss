@@ -33,12 +33,9 @@
         margin-top: 5em;
     }
 
-    &__amount {
-        font-size: 3.5rem;
-    }
-
+    &__amount,
     &__icon {
-        font-size: 3.5rem;
+        font-size: $total-amount-fs;
     }
 }
 

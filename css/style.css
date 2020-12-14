@@ -78,10 +78,7 @@ main {
   text-align: center;
   margin-top: 5em; }
 
-.payments__amount {
-  font-size: 3.5rem; }
-
-.payments__icon {
+.payments__amount, .payments__icon {
   font-size: 3.5rem; }
 
 .initial--wrapper {
@@ -112,9 +109,8 @@ main {
     width: 10%; }
   .asset__icon img {
     width: 100%; }
-
-.asset > * {
-  padding-right: .5em; }
+  .asset > * {
+    padding-right: .5em; }
 
 .assets--total {
   color: white;
@@ -122,10 +118,7 @@ main {
   text-align: center;
   margin-top: 5em; }
 
-.assets__amount {
-  font-size: 3.5rem; }
-
-.assets__icon {
+.assets__amount, .assets__icon {
   font-size: 3.5rem; }
 
 .spend--wrapper {
@@ -174,6 +167,15 @@ main {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap; }
+  .total__payments, .total__assets {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 5em; }
+  .total__amount {
+    font-size: 3.5rem; }
+  .total__icon {
+    font-size: 3.5rem; }
 
 .user {
   background-color: lightpink; }

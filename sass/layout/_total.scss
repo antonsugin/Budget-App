@@ -3,4 +3,21 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+
+    &__payments,
+    &__assets {
+        color: white;
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 5em;
+    }
+
+    &__amount {
+        font-size: $total-amount-fs;
+    }
+
+    &__icon {
+        font-size: $total-amount-fs;
+    }
 }
+
