@@ -10,12 +10,14 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: 'Lora', serif; }
+  font-family: 'Lora', serif;
+  line-height: 1.6; }
 
 .header-wrapper {
   display: flex;
   justify-content: space-evenly;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin-top: 4em; }
 
 main {
   margin: 4em; }
@@ -31,7 +33,8 @@ main {
 
 .button > * {
   font-size: 2.2rem;
-  color: white;
+  color: #ECFFFF;
+  background-color: #AEB3C3;
   border: 1px solid black;
   display: flex;
   align-items: center;
@@ -60,6 +63,22 @@ main {
   color: #ECFFFF;
   background-color: #0C9BF2; }
 
+.loan {
+  color: #ECFFFF;
+  background-color: #E95F86; }
+
+.short {
+  color: #ECFFFF;
+  background-color: #21CEBA; }
+
+.long {
+  color: #ECFFFF;
+  background-color: #FEA201; }
+
+.invest {
+  color: #ECFFFF;
+  background-color: #00C970; }
+
 .payment {
   font-size: 3.5rem; }
   .payment--layout {
@@ -74,20 +93,13 @@ main {
   .payment > * {
     padding-right: .5em; }
 
-.payments--total {
-  color: white;
-  font-size: 2rem;
-  text-align: center;
-  margin-top: 5em; }
-
-.payments__amount, .payments__icon {
-  font-size: 3.5rem; }
-
 .initial {
   font-size: 2.5rem;
   padding: .5em;
-  background-color: wheat;
-  text-align: center; }
+  text-align: center;
+  color: #ECFFFF;
+  background-color: #009DC6;
+  font-weight: 600; }
   .initial--layout {
     width: 50%;
     margin: 0 auto; }
@@ -97,7 +109,6 @@ main {
     width: 100%; }
 
 .asset {
-  color: blanchedalmond;
   font-size: 3.5rem; }
   .asset--layout {
     margin-top: 1em;
@@ -111,19 +122,12 @@ main {
   .asset > * {
     padding-right: .5em; }
 
-.assets--total {
-  color: white;
-  font-size: 2rem;
-  text-align: center;
-  margin-top: 5em; }
-
-.assets__amount, .assets__icon {
-  font-size: 3.5rem; }
-
 .spend {
   font-size: 2rem;
   padding: .5em;
-  background-color: wheat;
+  color: #ECFFFF;
+  background-color: #009DC6;
+  font-weight: 600;
   text-align: center; }
   .spend--layout {
     width: 50%;
@@ -164,11 +168,22 @@ main {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap; }
-  .total__payments, .total__assets {
-    color: white;
+  .total__payments {
+    color: #ECFFFF;
     font-size: 2rem;
     text-align: center;
-    margin-top: 5em; }
+    margin-top: 5em;
+    padding: 2em;
+    background-color: #FD013C;
+    font-weight: 600; }
+  .total__assets {
+    color: #ECFFFF;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 5em;
+    padding: 2em;
+    background-color: #00C970;
+    font-weight: 600; }
   .total__amount, .total__icon {
     font-size: 3.5rem; }
 

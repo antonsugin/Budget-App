@@ -1,8 +1,5 @@
 
 .payment {
-    // color: $color-primary-text;
-    // background-color: $color-pre-authorized;
-    // color: blanchedalmond;
     font-size: $total-amount-fs;
 
     &--layout {
@@ -24,19 +21,6 @@
         
     }
 }
-
-.payments {
-
-    &--total {
-        @include dataStyles;
-    }
-
-    &__amount,
-    &__icon {
-        font-size: $total-amount-fs;
-    }
-}
-
 
 
 

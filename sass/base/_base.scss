@@ -14,12 +14,14 @@ html {
 body {
     box-sizing: border-box;
     font-family: 'Lora', serif;
+    line-height: 1.6;
 }
 
 .header-wrapper {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    margin-top: 4em;
 }
 
 main {

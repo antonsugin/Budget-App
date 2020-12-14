@@ -1,6 +1,5 @@
 
 .asset {
-    color: blanchedalmond;
     font-size: $total-amount-fs;
 
     &--layout {
@@ -21,21 +20,6 @@
         
     }
 }
-
-
-.assets {
-
-    &--total {
-        @include dataStyles;
-    }
-
-    &__amount,
-    &__icon {
-        font-size: $total-amount-fs;
-    }
-
-}
-
 
 
 

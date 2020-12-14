@@ -4,10 +4,14 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
 
-    &__payments,
-    &__assets {
-        @include dataStyles;
+    &__payments {
+        @include dataStyles ($color-total-pay);
     }
+
+    &__assets {
+        @include dataStyles ($color-invest);
+    }
+    
 
     &__amount,
     &__icon {

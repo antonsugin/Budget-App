@@ -2,7 +2,8 @@
 .spend {
     font-size: 2rem;
     padding: .5em;
-    background-color: wheat;
+    @include listColor ($color-primary);
+    font-weight: 600;
     text-align: center;
 
     &--layout {
