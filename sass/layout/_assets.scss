@@ -1,25 +1,35 @@
 
 .asset {
     font-size: $total-amount-fs;
+    padding: .5em;
 
     &--layout {
         margin-top: 1em;
         @include flexLayout;
     }
 
+    &--wrapper {
+        display: flex;
+    }
+
     &__icon {
-        width: 10%;
+        min-width: 9%;
     }
 
     &__icon img {
         width: 100%;
     }
 
-    & > * {
+    & > :not(:last-child) {
         padding-right: .5em;
         
     }
 }
+
+.assets {
+    min-width: 25%;
+}
+
 
 
 

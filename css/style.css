@@ -24,7 +24,7 @@ main {
 
 .container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap; }
 
@@ -32,13 +32,14 @@ main {
   margin: 2em 0 10em 0; }
 
 .button > * {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   color: #ECFFFF;
   background-color: #AEB3C3;
   border: 1px solid black;
   display: flex;
   align-items: center;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  min-width: 10%; }
 
 .button--layout {
   display: flex;
@@ -50,7 +51,7 @@ main {
 .button__remove-icon,
 .button__edit-icon,
 .button__add-income-icon {
-  width: 20%; }
+  min-width: 20%; }
 
 .button__clear-icon img,
 .button__add-payment-icon img,
@@ -80,18 +81,24 @@ main {
   background-color: #00C970; }
 
 .payment {
-  font-size: 3.5rem; }
+  font-size: 3.5rem;
+  padding: .5em; }
   .payment--layout {
     margin-top: 1em;
     display: flex;
     align-items: center;
-    justify-content: center; }
+    justify-content: space-between; }
+  .payment--wrapper {
+    display: flex; }
   .payment__icon {
-    width: 10%; }
+    min-width: 9%; }
   .payment__icon img {
     width: 100%; }
-  .payment > * {
+  .payment > :not(:last-child) {
     padding-right: .5em; }
+
+.payments {
+  min-width: 25%; }
 
 .initial {
   font-size: 2.5rem;
@@ -109,18 +116,24 @@ main {
     width: 100%; }
 
 .asset {
-  font-size: 3.5rem; }
+  font-size: 3.5rem;
+  padding: .5em; }
   .asset--layout {
     margin-top: 1em;
     display: flex;
     align-items: center;
-    justify-content: center; }
+    justify-content: space-between; }
+  .asset--wrapper {
+    display: flex; }
   .asset__icon {
-    width: 10%; }
+    min-width: 9%; }
   .asset__icon img {
     width: 100%; }
-  .asset > * {
+  .asset > :not(:last-child) {
     padding-right: .5em; }
+
+.assets {
+  min-width: 25%; }
 
 .spend {
   font-size: 2rem;
