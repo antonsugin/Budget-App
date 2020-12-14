@@ -9,6 +9,7 @@
 @import "base/utilities";
 
 @import "components/buttons";
+@import "components/pre-authorized";
 
 @import "layout/main";
 @import "layout/payments";
@@ -27,25 +28,10 @@
 
 
 
-
-
-
-.user {
-    background-color: $color-primary;
-}
-
-// .current-salary {
-//     background-color: lightseagreen;
-// }
-
 @include salar;
 
-.remain-income {
-    // background-color: lightskyblue;
-    @include changeParameters(lightskyblue);
-}
 
 .total-budget {
     // background-color: lime;
-    @include changeParameters(lime);
+    @include changeParameters($color-secondory);
 }

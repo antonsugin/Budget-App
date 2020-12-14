@@ -9,6 +9,11 @@
     background-color: $color;
 }
 
+@mixin listColor ($color) {
+    color: $color-primary-text;
+    background-color: $color;
+}
+
 @mixin dataStyles {
     color: white;
     font-size: 2rem;
