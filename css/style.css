@@ -68,9 +68,8 @@ main {
     width: 10%; }
   .payment__icon img {
     width: 100%; }
-
-.payment > * {
-  padding-right: .5em; }
+  .payment > * {
+    padding-right: .5em; }
 
 .payments--total {
   color: white;
@@ -81,9 +80,6 @@ main {
 .payments__amount, .payments__icon {
   font-size: 3.5rem; }
 
-.initial--wrapper {
-  width: 100%; }
-
 .initial {
   font-size: 2.5rem;
   padding: .5em;
@@ -92,10 +88,10 @@ main {
   .initial--layout {
     width: 50%;
     margin: 0 auto; }
-  .initial__amount {
+  .initial__amount, .initial__icon {
     font-size: 4rem; }
-  .initial__icon {
-    font-size: 4rem; }
+  .initial--wrapper {
+    width: 100%; }
 
 .asset {
   color: blanchedalmond;
@@ -121,10 +117,6 @@ main {
 .assets__amount, .assets__icon {
   font-size: 3.5rem; }
 
-.spend--wrapper {
-  width: 100%;
-  margin-top: 10em; }
-
 .spend {
   font-size: 2rem;
   padding: .5em;
@@ -133,10 +125,11 @@ main {
   .spend--layout {
     width: 50%;
     margin: 0 auto; }
-  .spend__amount {
+  .spend__amount, .spend__icon {
     font-size: 4rem; }
-  .spend__icon {
-    font-size: 4rem; }
+  .spend--wrapper {
+    width: 100%;
+    margin-top: 10em; }
 
 .user {
   font-size: 4rem;
@@ -149,18 +142,14 @@ main {
   font-size: 1.5rem;
   text-align: center;
   padding: 2em; }
-  .current-salary__amount {
-    font-size: 4rem; }
-  .current-salary__icon {
+  .current-salary__amount, .current-salary__icon {
     font-size: 4rem; }
 
 .remain-income {
   font-size: 1.5rem;
   text-align: center;
   padding: 2em; }
-  .remain-income__amount {
-    font-size: 4rem; }
-  .remain-income__icon {
+  .remain-income__amount, .remain-income__icon {
     font-size: 4rem; }
 
 .total {
@@ -172,9 +161,7 @@ main {
     font-size: 2rem;
     text-align: center;
     margin-top: 5em; }
-  .total__amount {
-    font-size: 3.5rem; }
-  .total__icon {
+  .total__amount, .total__icon {
     font-size: 3.5rem; }
 
 .user {

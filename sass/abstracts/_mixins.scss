@@ -6,13 +6,18 @@
 }
 
 @mixin changeParameters($color) {
-    // padding: 2rem;
     background-color: $color;
 }
 
-@mixin listStyle {
+@mixin dataStyles {
     color: white;
     font-size: 2rem;
     text-align: center;
     margin-top: 5em;
+}
+
+@mixin flexLayout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

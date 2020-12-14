@@ -1,5 +1,5 @@
 .user {
-    font-size: 4rem;
+    font-size: $amount-fs;
     text-align: center;
     padding: 1em 0;
 
@@ -14,10 +14,7 @@
     text-align: center;
     padding: 2em;
 
-    &__amount {
-        font-size: $amount-fs;
-    }
-
+    &__amount,
     &__icon {
         font-size: $amount-fs;
     }
@@ -29,12 +26,9 @@
     text-align: center;
     padding: 2em;
 
-    &__amount {
-        font-size: $amount-fs;
-    }
-
+    &__amount,
     &__icon {
-        font-size: $amount-fs; 
+        font-size: $amount-fs;
     }
 }
 

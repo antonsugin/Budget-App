@@ -1,13 +1,11 @@
 
 .payment {
     color: blanchedalmond;
-    font-size: 3.5rem;
+    font-size: $total-amount-fs;
 
     &--layout {
         margin-top: 1em;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flexLayout;
     }
 
     &__icon {
@@ -17,20 +15,17 @@
     &__icon img {
         width: 100%;
     }
-}
 
-.payment > * {
-    padding-right: .5em;
-    
+    & > * {
+        padding-right: .5em;
+        
+    }
 }
 
 .payments {
 
     &--total {
-        color: white;
-        font-size: 2rem;
-        text-align: center;
-        margin-top: 5em;
+        @include dataStyles;
     }
 
     &__amount,

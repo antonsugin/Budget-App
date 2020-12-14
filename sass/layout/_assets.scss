@@ -5,9 +5,7 @@
 
     &--layout {
         margin-top: 1em;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flexLayout;
     }
 
     &__icon {
@@ -28,10 +26,7 @@
 .assets {
 
     &--total {
-        color: white;
-        font-size: 2rem;
-        text-align: center;
-        margin-top: 5em;
+        @include dataStyles;
     }
 
     &__amount,

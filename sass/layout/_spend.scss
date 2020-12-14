@@ -1,9 +1,4 @@
 
-.spend--wrapper {
-    width: 100%;
-    margin-top: 10em;
-}
-
 .spend {
     font-size: 2rem;
     padding: .5em;
@@ -15,12 +10,14 @@
         margin: 0 auto;
     }
 
-    &__amount {
+    &__amount,
+    &__icon {
         font-size: $amount-fs;
     }
 
-    &__icon {
-        font-size: $amount-fs;
+    &--wrapper {
+        width: 100%;
+        margin-top: 10em;
     }
 }
 

@@ -6,16 +6,10 @@
 
     &__payments,
     &__assets {
-        color: white;
-        font-size: 2rem;
-        text-align: center;
-        margin-top: 5em;
+        @include dataStyles;
     }
 
-    &__amount {
-        font-size: $total-amount-fs;
-    }
-
+    &__amount,
     &__icon {
         font-size: $total-amount-fs;
     }
