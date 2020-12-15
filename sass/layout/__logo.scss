@@ -1,0 +1,25 @@
+.logo {
+
+    &--layout {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: .5rem;
+        left: 4rem;
+    }
+
+    &__icon {
+        width: 25%;
+        display: flex;
+    }
+
+    &__icon img {
+        width: 100%;
+    }
+
+    &__name {
+        font-size: 2rem;
+        line-height: 1;
+        // letter-spacing: .125em;
+    }
+}

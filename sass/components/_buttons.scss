@@ -5,15 +5,16 @@
 
 .button > * {
     font-size: 2.5rem;
-    // padding: 1em;
-    // color: white;
+    padding: .5em;
     @include listColor ($color-button);
     border: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    // justify-content: center;
+    // text-align: center;
     min-width: 10%;
-    // border-radius: 15%;
+    // border-radius: 25%;
 }
 
 .button {
@@ -25,14 +26,13 @@
     }
 }
 
-
-
 .button__clear-icon,
 .button__add-payment-icon,
 .button__remove-icon,
 .button__edit-icon,
 .button__add-income-icon {
-    width: 10%;
+    width: 15%;
+    display: flex;
 }
 
 .button__clear-icon img,

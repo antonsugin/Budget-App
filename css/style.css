@@ -11,7 +11,11 @@ html {
 body {
   box-sizing: border-box;
   font-family: 'Lora', serif;
-  line-height: 1.6; }
+  line-height: 1.6;
+  letter-spacing: .5em; }
+
+header {
+  position: relative; }
 
 .header-wrapper {
   display: flex;
@@ -33,6 +37,7 @@ main {
 
 .button > * {
   font-size: 2.5rem;
+  padding: .5em;
   color: #ECFFFF;
   background-color: #AEB3C3;
   border: 1px solid black;
@@ -51,7 +56,8 @@ main {
 .button__remove-icon,
 .button__edit-icon,
 .button__add-income-icon {
-  width: 10%; }
+  width: 15%;
+  display: flex; }
 
 .button__clear-icon img,
 .button__add-payment-icon img,
@@ -199,6 +205,24 @@ main {
     font-weight: 600; }
   .total__amount, .total__icon {
     font-size: 3.5rem; }
+
+.logo--layout {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: .5rem;
+  left: 4rem; }
+
+.logo__icon {
+  width: 25%;
+  display: flex; }
+
+.logo__icon img {
+  width: 100%; }
+
+.logo__name {
+  font-size: 2rem;
+  line-height: 1; }
 
 .current-salary {
   background-color: lightseagreen; }
