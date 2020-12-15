@@ -5,7 +5,10 @@
 
     &--layout {
         margin-top: 1em;
-        @include flexLayout;
+        // @include flexLayout;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
     &--wrapper {
@@ -13,7 +16,7 @@
     }
     
     &__icon {
-        min-width: 9%;
+        width: 5%;
     }
 
     &__icon img {

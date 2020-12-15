@@ -51,7 +51,7 @@ main {
 .button__remove-icon,
 .button__edit-icon,
 .button__add-income-icon {
-  min-width: 20%; }
+  width: 10%; }
 
 .button__clear-icon img,
 .button__add-payment-icon img,
@@ -91,7 +91,7 @@ main {
   .payment--wrapper {
     display: flex; }
   .payment__icon {
-    min-width: 9%; }
+    width: 5%; }
   .payment__icon img {
     width: 100%; }
   .payment > :not(:last-child) {
@@ -122,11 +122,11 @@ main {
     margin-top: 1em;
     display: flex;
     align-items: center;
-    justify-content: space-between; }
+    justify-content: space-evenly; }
   .asset--wrapper {
     display: flex; }
   .asset__icon {
-    min-width: 9%; }
+    width: 7%; }
   .asset__icon img {
     width: 100%; }
   .asset > :not(:last-child) {
