@@ -12,7 +12,8 @@ body {
   box-sizing: border-box;
   font-family: 'Lora', serif;
   line-height: 1.6;
-  letter-spacing: .4em; }
+  letter-spacing: .4em;
+  background-image: url("../icons/back.png"); }
 
 a {
   text-decoration: none;
@@ -78,7 +79,8 @@ main {
     align-items: center;
     justify-content: space-evenly;
     min-width: 10%;
-    box-shadow: 0px 10px 30px 4px rgba(0, 0, 0, 0.2), 10px 10px 30px 4px rgba(45, 78, 255, 0.25); }
+    box-shadow: 0px 10px 30px 4px rgba(0, 0, 0, 0.2), 10px 10px 30px 4px rgba(45, 78, 255, 0.25);
+    border-radius: 1.5rem; }
   .button > :active {
     box-shadow: inset -12px -8px 40px #464646; }
 
@@ -105,7 +107,8 @@ main {
 .payment {
   font-size: 3.5rem;
   padding: .5em;
-  box-shadow: 0px 10px 30px 4px rgba(0, 0, 0, 0.2), 10px 10px 30px 4px rgba(45, 78, 255, 0.25); }
+  box-shadow: 0px 10px 30px 4px rgba(0, 0, 0, 0.2), 10px 10px 30px 4px rgba(45, 78, 255, 0.25);
+  border-radius: 4rem; }
   .payment--layout {
     margin-top: 1em;
     display: flex;
@@ -143,7 +146,8 @@ main {
 .asset {
   font-size: 3.5rem;
   padding: .5em;
-  box-shadow: 0px 10px 30px 4px rgba(0, 0, 0, 0.2), 10px 10px 30px 4px rgba(45, 78, 255, 0.25); }
+  box-shadow: 0px 10px 30px 4px rgba(0, 0, 0, 0.2), 10px 10px 30px 4px rgba(45, 78, 255, 0.25);
+  border-radius: 4rem; }
   .asset--layout {
     margin-top: 1em;
     display: flex;

@@ -1,11 +1,13 @@
 .buttons {
     margin: 2em 0 10em 0;
     
+    
 }
 
 .button {
     // color: $color-primary-text;
     font-weight: 600;
+    
     
 
     &--layout {
@@ -58,6 +60,7 @@
         justify-content: space-evenly;
         min-width: 10%;
         @include box-shadow;
+        border-radius: 1.5rem;
     }
 
     & > :active {

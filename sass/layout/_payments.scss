@@ -3,6 +3,7 @@
     font-size: $total-amount-fs;
     padding: .5em;
     @include box-shadow;
+    border-radius: 4rem;
     
 
     &--layout {
