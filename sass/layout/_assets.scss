@@ -2,6 +2,7 @@
 .asset {
     font-size: $total-amount-fs;
     padding: .5em;
+    @include box-shadow;
 
     &--layout {
         margin-top: 1em;

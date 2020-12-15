@@ -18,6 +18,12 @@ body {
     letter-spacing: .4em;
 }
 
+a {
+    text-decoration: none;
+    color: $color-primary-text;
+    
+}
+
 header {
     position: relative;
 }

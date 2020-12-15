@@ -2,6 +2,8 @@
 .payment {
     font-size: $total-amount-fs;
     padding: .5em;
+    @include box-shadow;
+    
 
     &--layout {
         margin-top: 1em;
@@ -25,6 +27,13 @@
     & > :not(:last-child) {
         padding-right: .5em;
         
+    }
+
+    &:active {
+        box-shadow: 0 -20px 15px -10px rgba(255, 255, 0, 0.3) inset,
+                    0 20px 15px -10px rgba(255, 255, 0, 0.3) inset,
+                    0 0 10px rgba(0, 0, 0, 0.1);
+
     }
 }
 

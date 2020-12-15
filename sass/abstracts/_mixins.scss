@@ -15,3 +15,31 @@
     
 }
 
+@mixin bg-add-button {
+    background: #11998e;
+    background: -webkit-linear-gradient(to bottom, #38ef7d, #11998e); 
+    background: linear-gradient(to bottom, #38ef7d, #11998e); 
+}
+
+@mixin bg-remove-button {
+    background: #FF416C;
+    background: -webkit-linear-gradient(to bottom, #FF4B2B, #FF416C);
+    background: linear-gradient(to bottom, #FF4B2B, #FF416C);
+}
+
+@mixin bg-edit-button {
+    background: #D66D75;
+    background: -webkit-linear-gradient(to bottom, #E29587, #D66D75);
+    background: linear-gradient(to bottom, #E29587, #D66D75);
+}
+
+@mixin bg-clear-button {
+    background: #fc4a1a;
+    background: -webkit-linear-gradient(to bottom, #f7b733, #fc4a1a);
+    background: linear-gradient(to bottom, #f7b733, #fc4a1a);
+}
+
+@mixin box-shadow {
+    box-shadow: 0px 10px 30px 4px rgba(0,0,0,0.2),
+                    10px 10px 30px 4px rgba(45,78,255,0.25);
+}
