@@ -12,7 +12,7 @@ body {
   box-sizing: border-box;
   font-family: 'Lora', serif;
   line-height: 1.6;
-  letter-spacing: .5em; }
+  letter-spacing: .4em; }
 
 header {
   position: relative; }
@@ -170,7 +170,9 @@ main {
   font-size: 1.5rem;
   text-align: center;
   padding: 2em;
-  font-weight: 600; }
+  font-weight: 600;
+  background-color: lightseagreen;
+  color: #ECFFFF; }
   .current-salary__amount, .current-salary__icon {
     font-size: 4rem; }
 
@@ -178,8 +180,8 @@ main {
   font-size: 1.5rem;
   text-align: center;
   padding: 2em;
-  background-color: #FEA201;
-  color: #4A575F; }
+  background-color: lightseagreen;
+  color: #ECFFFF; }
   .remain-income__amount, .remain-income__icon {
     font-size: 4rem; }
 
@@ -222,10 +224,5 @@ main {
 
 .logo__name {
   font-size: 2rem;
-  line-height: 1; }
-
-.current-salary {
-  background-color: lightseagreen; }
-
-.total-budget {
-  background-color: #FEA201; }
+  line-height: 1;
+  color: #ECFFFF; }

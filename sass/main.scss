@@ -27,16 +27,3 @@
 
 @import "pages/home";
 
-
-
-
-
-
-
-@include salar;
-
-
-.total-budget {
-    // background-color: lime;
-    @include changeParameters($color-secondory);
-}

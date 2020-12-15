@@ -1,14 +1,4 @@
 
-@mixin salar {
-    .current-salary {
-        background-color: lightseagreen;
-    }
-}
-
-@mixin changeParameters($color) {
-    background-color: $color;
-}
-
 @mixin listColor ($color) {
     color: $color-primary-text;
     background-color: $color;
@@ -24,10 +14,4 @@
     font-weight: 600;
     
 }
-
-// @mixin flexLayout {
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-between;
-// }
 
