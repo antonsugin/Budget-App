@@ -19,4 +19,6 @@
     &--wrapper {
         width: 100%;
     }
+
+    @include box-label;
 }

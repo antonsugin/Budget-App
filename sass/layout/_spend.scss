@@ -18,7 +18,9 @@
 
     &--wrapper {
         width: 100%;
-        margin-top: 10em;
+        margin-top: 5em;
     }
+
+    @include box-label;
 }
 
