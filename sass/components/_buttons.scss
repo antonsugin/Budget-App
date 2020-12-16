@@ -18,18 +18,22 @@
 
     &__clear {
         @include bg-clear-button;
+        @include button-effect;
     }
 
     &__add {
         @include bg-add-button;
+        @include button-effect;
     }
 
     &__remove {
         @include bg-remove-button;
+        @include button-effect;
     }
 
     &__edit {
         @include bg-edit-button;
+        @include button-effect;
     }
 
     &__clear-icon,
@@ -54,13 +58,14 @@
         padding: .5em;
         // @include listColor ($color-button);
         // @include bg-add-button;
-        border: 1px solid black;
+        // border: 1px solid black;
+        outline: none;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
         min-width: 10%;
         @include box-shadow;
-        border-radius: 1.5rem;
+        // border-radius: 15px;
     }
 
     & > :active {

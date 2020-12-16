@@ -51,18 +51,134 @@ main {
     background: #fc4a1a;
     background: -webkit-linear-gradient(to bottom, #f7b733, #fc4a1a);
     background: linear-gradient(to bottom, #f7b733, #fc4a1a); }
+    .button__clear {
+      position: relative; }
+    .button__clear::after, .button__clear::before {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 0;
+      border: 3px solid;
+      transition: all 0.6s ease; }
+    .button__clear::after {
+      bottom: 0;
+      right: 0;
+      border-top-color: transparent;
+      border-left-color: transparent;
+      border-bottom-color: #2C5364;
+      border-right-color: #2C5364; }
+    .button__clear::before {
+      top: 0;
+      left: 0;
+      border-bottom-color: transparent;
+      border-right-color: transparent;
+      border-top-color: #2C5364;
+      border-left-color: #2C5364; }
+    .button__clear:hover:after, .button__clear:hover:before {
+      width: 100%;
+      height: 100%; }
+    .button__clear:focus:after, .button__clear:focus:before {
+      width: 100%;
+      height: 100%; }
   .button__add {
     background: #11998e;
     background: -webkit-linear-gradient(to bottom, #38ef7d, #11998e);
     background: linear-gradient(to bottom, #38ef7d, #11998e); }
+    .button__add {
+      position: relative; }
+    .button__add::after, .button__add::before {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 0;
+      border: 3px solid;
+      transition: all 0.6s ease; }
+    .button__add::after {
+      bottom: 0;
+      right: 0;
+      border-top-color: transparent;
+      border-left-color: transparent;
+      border-bottom-color: #2C5364;
+      border-right-color: #2C5364; }
+    .button__add::before {
+      top: 0;
+      left: 0;
+      border-bottom-color: transparent;
+      border-right-color: transparent;
+      border-top-color: #2C5364;
+      border-left-color: #2C5364; }
+    .button__add:hover:after, .button__add:hover:before {
+      width: 100%;
+      height: 100%; }
+    .button__add:focus:after, .button__add:focus:before {
+      width: 100%;
+      height: 100%; }
   .button__remove {
     background: #FF416C;
     background: -webkit-linear-gradient(to bottom, #FF4B2B, #FF416C);
     background: linear-gradient(to bottom, #FF4B2B, #FF416C); }
+    .button__remove {
+      position: relative; }
+    .button__remove::after, .button__remove::before {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 0;
+      border: 3px solid;
+      transition: all 0.6s ease; }
+    .button__remove::after {
+      bottom: 0;
+      right: 0;
+      border-top-color: transparent;
+      border-left-color: transparent;
+      border-bottom-color: #2C5364;
+      border-right-color: #2C5364; }
+    .button__remove::before {
+      top: 0;
+      left: 0;
+      border-bottom-color: transparent;
+      border-right-color: transparent;
+      border-top-color: #2C5364;
+      border-left-color: #2C5364; }
+    .button__remove:hover:after, .button__remove:hover:before {
+      width: 100%;
+      height: 100%; }
+    .button__remove:focus:after, .button__remove:focus:before {
+      width: 100%;
+      height: 100%; }
   .button__edit {
     background: #D66D75;
     background: -webkit-linear-gradient(to bottom, #E29587, #D66D75);
     background: linear-gradient(to bottom, #E29587, #D66D75); }
+    .button__edit {
+      position: relative; }
+    .button__edit::after, .button__edit::before {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 0;
+      border: 3px solid;
+      transition: all 0.6s ease; }
+    .button__edit::after {
+      bottom: 0;
+      right: 0;
+      border-top-color: transparent;
+      border-left-color: transparent;
+      border-bottom-color: #2C5364;
+      border-right-color: #2C5364; }
+    .button__edit::before {
+      top: 0;
+      left: 0;
+      border-bottom-color: transparent;
+      border-right-color: transparent;
+      border-top-color: #2C5364;
+      border-left-color: #2C5364; }
+    .button__edit:hover:after, .button__edit:hover:before {
+      width: 100%;
+      height: 100%; }
+    .button__edit:focus:after, .button__edit:focus:before {
+      width: 100%;
+      height: 100%; }
   .button__clear-icon, .button__add-icon, .button__remove-icon, .button__edit-icon, .button__add-income-icon {
     width: 15%;
     display: flex; }
@@ -75,13 +191,12 @@ main {
   .button > * {
     font-size: 2.5rem;
     padding: .5em;
-    border: 1px solid black;
+    outline: none;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     min-width: 10%;
-    box-shadow: 0px 10px 30px 4px rgba(0, 0, 0, 0.2), 10px 10px 30px 4px rgba(45, 78, 255, 0.25);
-    border-radius: 1.5rem; }
+    box-shadow: 0px 10px 30px 4px rgba(0, 0, 0, 0.2), 10px 10px 30px 4px rgba(45, 78, 255, 0.25); }
   .button > :active {
     box-shadow: inset -12px -8px 40px #464646; }
 
@@ -249,7 +364,8 @@ main {
     background-size: 100% 3px;
     background-repeat: no-repeat; }
   .user__name {
-    font-size: 5rem; }
+    font-size: 5rem;
+    text-transform: capitalize; }
 
 .current-salary {
   font-size: 1.5rem;
