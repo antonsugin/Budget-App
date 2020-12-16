@@ -1,9 +1,29 @@
 .user {
+    width: 40%;
+    margin: 0 auto;
     font-size: $amount-fs;
     text-align: center;
-    padding: 1em 0;
-    background-color: $color-primary;
+    // padding: 1em 0;
+    padding-top: 1em;
     color: $color-primary-text;
+
+    &--wrapper {
+        // background-color: $color-primary;
+        width: 100%;
+        // background-image: linear-gradient(to bottom, #141e30, #243b55);
+        // background-repeat: no-repeat;
+        // background-size: cover;
+        // background-position: center;
+    }
+
+    &::after {
+        content: '\00a0';
+        display: table;
+        width:100%;
+        background-image:radial-gradient(at 50% 0, blue 0%, red 50%, transparent 75%);
+        background-size: 100% 3px;
+        background-repeat: no-repeat;
+    }
 
     &__name {
         font-size: 5rem;
@@ -11,10 +31,16 @@
 }
 
 
+// background: #0F2027;  /* fallback for old browsers */
+// background: -webkit-linear-gradient(to top, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+
+
+
 .current-salary {
     font-size: 1.5rem;
     text-align: center;
     padding: 2em;
+    // margin-top: 1em;
     font-weight: 600;
     background-color: $color-test;
     color: $color-primary-text;
@@ -31,6 +57,7 @@
     font-size: 1.5rem;
     text-align: center;
     padding: 2em;
+    // margin-top: 1em;
     background-color: $color-test;
     color: $color-primary-text;
 
