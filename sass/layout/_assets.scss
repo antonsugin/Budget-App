@@ -28,14 +28,14 @@
         padding-right: .5em;
         
     }
+
+    @include mediaPaymentInvest;
 }
 
 .assets {
-    min-width: 25%;
+    // min-width: 25%;
+    margin-top: 5em;
 }
-
-
-
 
 
 

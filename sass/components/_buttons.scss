@@ -53,6 +53,16 @@
         width: 100%;
     }
 
+    @media only screen and (max-width: 2000px) {
+        &__clear-icon,
+        &__add-icon,
+        &__remove-icon,
+        &__edit-icon,
+        &__add-income-icon {
+            width: 10%;
+        }
+    }
+
     & > * {
         font-size: 2.5rem;
         padding: .5em;
@@ -66,6 +76,11 @@
         min-width: 10%;
         @include box-shadow;
         // border-radius: 15px;
+
+        @media only screen and (max-width: 2000px) {
+            font-size: 2rem; 
+            margin-right: 1em;
+        }
     }
 
     & > :active {

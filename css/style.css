@@ -30,13 +30,16 @@ header {
   flex-wrap: wrap; }
 
 main {
-  margin: 5em 4em 5em 4em; }
+  margin: 5em 4em; }
 
 .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap; }
+  @media only screen and (max-width: 2000px) {
+    .container {
+      justify-content: space-evenly; } }
 
 .buttons {
   margin: 5em 0 10em 0; }
@@ -188,6 +191,9 @@ main {
   .button__edit-icon img,
   .button__add-income-icon img {
     width: 100%; }
+  @media only screen and (max-width: 2000px) {
+    .button__clear-icon, .button__add-icon, .button__remove-icon, .button__edit-icon, .button__add-income-icon {
+      width: 10%; } }
   .button > * {
     font-size: 2.5rem;
     padding: .5em;
@@ -197,6 +203,10 @@ main {
     justify-content: space-evenly;
     min-width: 10%;
     box-shadow: 0px 10px 30px 4px rgba(0, 0, 0, 0.2), 10px 10px 30px 4px rgba(45, 78, 255, 0.25); }
+    @media only screen and (max-width: 2000px) {
+      .button > * {
+        font-size: 2rem;
+        margin-right: 1em; } }
   .button > :active {
     box-shadow: inset -12px -8px 40px #464646; }
 
@@ -240,9 +250,17 @@ main {
     padding-right: .5em; }
   .payment:active {
     box-shadow: 0 -20px 15px -10px rgba(255, 255, 0, 0.3) inset, 0 20px 15px -10px rgba(255, 255, 0, 0.3) inset, 0 0 10px rgba(0, 0, 0, 0.1); }
+  @media only screen and (max-width: 2000px) {
+    .payment {
+      font-size: 2.5rem; } }
 
 .payments {
-  min-width: 25%; }
+  max-width: 35%; }
+
+.chart {
+  min-width: 65%;
+  display: flex;
+  justify-content: center; }
 
 .initial {
   font-size: 2.5rem;
@@ -283,6 +301,9 @@ main {
     -ms-transform: skew(8deg) rotate(3deg);
     -o-transform: skew(8deg) rotate(3deg);
     transform: skew(8deg) rotate(3deg); }
+  @media only screen and (max-width: 2000px) {
+    .initial {
+      font-size: 1.8rem; } }
 
 .asset {
   font-size: 3.5rem;
@@ -302,9 +323,12 @@ main {
     width: 100%; }
   .asset > :not(:last-child) {
     padding-right: .5em; }
+  @media only screen and (max-width: 2000px) {
+    .asset {
+      font-size: 2.5rem; } }
 
 .assets {
-  min-width: 25%; }
+  margin-top: 5em; }
 
 .spend {
   font-size: 2rem;
@@ -346,6 +370,9 @@ main {
     -ms-transform: skew(8deg) rotate(3deg);
     -o-transform: skew(8deg) rotate(3deg);
     transform: skew(8deg) rotate(3deg); }
+  @media only screen and (max-width: 2000px) {
+    .spend {
+      font-size: 1.8rem; } }
 
 .user {
   width: 40%;
@@ -383,6 +410,11 @@ main {
     box-shadow: 0px 0px 0px #ECFFFF; }
   .current-salary__amount, .current-salary__icon {
     font-size: 4rem; }
+  @media only screen and (max-width: 2000px) {
+    .current-salary {
+      font-size: 1.2rem; }
+      .current-salary__amount, .current-salary__icon {
+        font-size: 3rem; } }
 
 .remain-income {
   font-size: 1.5rem;
@@ -399,6 +431,11 @@ main {
     box-shadow: 0px 0px 0px #ECFFFF; }
   .remain-income__amount, .remain-income__icon {
     font-size: 4rem; }
+  @media only screen and (max-width: 2000px) {
+    .remain-income {
+      font-size: 1.2rem; }
+      .remain-income__amount, .remain-income__icon {
+        font-size: 3rem; } }
 
 .total {
   display: flex;
@@ -422,6 +459,11 @@ main {
     font-weight: 600; }
   .total__amount, .total__icon {
     font-size: 3.5rem; }
+  @media only screen and (max-width: 2000px) {
+    .total__payments, .total__assets {
+      font-size: 1.5rem; }
+    .total__amount, .total__icon {
+      font-size: 3rem; } }
 
 .logo--layout {
   display: flex;
@@ -441,3 +483,9 @@ main {
   font-size: 2rem;
   line-height: 1;
   color: #ECFFFF; }
+
+@media only screen and (max-width: 2000px) {
+  .logo__name {
+    font-size: 1.2rem; }
+  .logo__icon {
+    width: 18%; } }

@@ -22,5 +22,7 @@
     }
 
     @include box-label;
+
+    @include mediaInitialSpend;
 }
 

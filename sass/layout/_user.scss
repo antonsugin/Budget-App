@@ -61,6 +61,8 @@
     &__icon {
         font-size: $amount-fs;
     }
+
+    @include mediaHeader;
 }
 
 
@@ -88,6 +90,8 @@
     &__icon {
         font-size: $amount-fs;
     }
+
+    @include mediaHeader;    
 }
 
 

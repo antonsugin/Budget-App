@@ -22,4 +22,14 @@
         line-height: 1;
         color: $color-primary-text;
     }
+
+    @media only screen and (max-width: 2000px) {
+        &__name {
+            font-size: 1.2rem;
+        }
+
+        &__icon {
+            width: 18%;
+        }
+      }
 }
