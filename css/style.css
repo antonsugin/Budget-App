@@ -1,15 +1,3 @@
-.add,
-.clear,
-.remove,
-.edit {
-  transition: all 0.6s ease; }
-
-.button__add-icon,
-.button__clear-icon,
-.button__remove-icon,
-.button__edit-icon {
-  transition: all 0.6s ease; }
-
 *,
 *::after,
 *::before {
@@ -54,10 +42,7 @@ main {
   margin: 5em 0 10em 0; }
 
 .button {
-  font-weight: 600;
-  transition: all 0.6s ease; }
-  .button:hover {
-    transition: all 0.6s ease; }
+  font-weight: 600; }
   .button--layout {
     display: flex;
     justify-content: space-evenly;
@@ -95,6 +80,8 @@ main {
     .button__clear:focus::after, .button__clear:focus::before {
       width: 100%;
       height: 100%; }
+    .button__clear .clear {
+      transition: all 0.6s ease; }
     .button__clear:hover > .clear {
       transition: all 0.6s ease;
       transform: translateX(-200%);
@@ -142,6 +129,8 @@ main {
     .button__add:focus::after, .button__add:focus::before {
       width: 100%;
       height: 100%; }
+    .button__add .add {
+      transition: all 0.6s ease; }
     .button__add:hover > .add {
       transition: all 0.6s ease;
       transform: translateX(-200%);
@@ -189,6 +178,8 @@ main {
     .button__remove:focus::after, .button__remove:focus::before {
       width: 100%;
       height: 100%; }
+    .button__remove .remove {
+      transition: all 0.6s ease; }
     .button__remove:hover > .remove {
       transition: all 0.6s ease;
       transform: translateX(-200%);
@@ -236,6 +227,8 @@ main {
     .button__edit:focus::after, .button__edit:focus::before {
       width: 100%;
       height: 100%; }
+    .button__edit .edit {
+      transition: all 0.6s ease; }
     .button__edit:hover > .edit {
       transition: all 0.6s ease;
       transform: translateX(-200%);
@@ -250,18 +243,34 @@ main {
     .button__edit:focus > .button__edit-icon {
       transition: all 0.6s ease;
       transform: scale(1.2) translateX(-120%); }
-  .button__clear-icon, .button__add-icon, .button__remove-icon, .button__edit-icon, .button__add-income-icon {
+  .button__clear-icon, .button__add-icon, .button__remove-icon, .button__edit-icon {
     width: 15%;
-    display: flex; }
+    display: flex;
+    transition: all 0.6s ease; }
   .button__clear-icon img,
   .button__add-icon img,
   .button__remove-icon img,
-  .button__edit-icon img,
-  .button__add-income-icon img {
+  .button__edit-icon img {
     width: 100%; }
   @media only screen and (max-width: 2000px) {
-    .button__clear-icon, .button__add-icon, .button__remove-icon, .button__edit-icon, .button__add-income-icon {
-      width: 10%; } }
+    .button__clear-icon, .button__add-icon, .button__remove-icon, .button__edit-icon {
+      width: 10%; }
+    .button__clear:hover > .button__clear-icon {
+      transform: scale(1.5) translateX(-160%); }
+    .button__add:hover > .button__add-icon {
+      transform: scale(1.5) translateX(-140%); }
+    .button__remove:hover > .button__remove-icon {
+      transform: scale(1.5) translateX(-170%); }
+    .button__edit:hover > .button__edit-icon {
+      transform: scale(1.5) translateX(-140%); }
+    .button__clear:focus > .button__clear-icon {
+      transform: scale(1.5) translateX(-160%); }
+    .button__add:focus > .button__add-icon {
+      transform: scale(1.5) translateX(-140%); }
+    .button__remove:focus > .button__remove-icon {
+      transform: scale(1.5) translateX(-170%); }
+    .button__edit:focus > .button__edit-icon {
+      transform: scale(1.5) translateX(-140%); } }
   .button > * {
     font-size: 2.5rem;
     padding: .5em;

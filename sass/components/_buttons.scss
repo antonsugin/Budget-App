@@ -1,26 +1,9 @@
 .buttons {
     margin: 5em 0 10em 0;
-    
-    
 }
 
 .button {
-    // color: $color-primary-text;
     font-weight: 600;
-    // transition: all 0.2s linear 0s;
-    transition: all 0.6s ease;
-    
-
-    
-
-    &:hover {
-
-        // text-indent: -200%;
-        // transition: all 0.2s linear 0s;
-        transition: all 0.6s ease;
-    }
-    
-    
 
     &--layout {
         display: flex;
@@ -29,9 +12,13 @@
     }
 
     &__clear {
-        // position: relative;
         @include bg-clear-button;
         @include button-effect;
+
+        & .clear {
+            transition: all 0.6s ease;
+        }
+
 
         &:hover > .clear {
             transition: all 0.6s ease;
@@ -63,6 +50,10 @@
         @include bg-add-button;
         @include button-effect;
 
+        & .add {
+            transition: all 0.6s ease;
+        }
+
         &:hover > .add {
             transition: all 0.6s ease;
             transform: translateX(-200%);
@@ -89,6 +80,10 @@
     &__remove {
         @include bg-remove-button;
         @include button-effect;
+
+        & .remove {
+            transition: all 0.6s ease;
+        }
 
         &:hover > .remove {
             transition: all 0.6s ease;
@@ -117,6 +112,10 @@
         @include bg-edit-button;
         @include button-effect;
 
+        & .edit {
+            transition: all 0.6s ease;
+        }
+
         &:hover > .edit {
             transition: all 0.6s ease;
             transform: translateX(-200%);
@@ -143,17 +142,16 @@
     &__clear-icon,
     &__add-icon,
     &__remove-icon,
-    &__edit-icon,
-    &__add-income-icon {
+    &__edit-icon {
         width: 15%;
         display: flex;
+        transition: all 0.6s ease;
     }
 
     &__clear-icon img,
     &__add-icon img,
     &__remove-icon img,
-    &__edit-icon img,
-    &__add-income-icon img {
+    &__edit-icon img {
         width: 100%;
     }
 
@@ -161,26 +159,47 @@
         &__clear-icon,
         &__add-icon,
         &__remove-icon,
-        &__edit-icon,
-        &__add-income-icon {
+        &__edit-icon {
             width: 10%;
+        }
+
+        &__clear:hover > .button__clear-icon {
+            transform: scale(1.5) translateX(-160%);
+        }
+        &__add:hover > .button__add-icon {
+            transform: scale(1.5) translateX(-140%);
+        }
+        &__remove:hover > .button__remove-icon{
+            transform: scale(1.5) translateX(-170%);
+        }
+        &__edit:hover > .button__edit-icon {
+            transform: scale(1.5) translateX(-140%);
+        }
+
+        &__clear:focus > .button__clear-icon {
+            transform: scale(1.5) translateX(-160%);
+        }
+        &__add:focus > .button__add-icon {
+            transform: scale(1.5) translateX(-140%);
+        }
+        &__remove:focus > .button__remove-icon{
+            transform: scale(1.5) translateX(-170%);
+        }
+        &__edit:focus > .button__edit-icon {
+            transform: scale(1.5) translateX(-140%);
         }
     }
 
     & > * {
         font-size: 2.5rem;
         padding: .5em;
-        // @include listColor ($color-button);
-        // @include bg-add-button;
-        // border: 1px solid black;
         outline: none;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
         min-width: 10%;
         @include box-shadow;
-        // border-radius: 15px;
-
+        
         @media only screen and (max-width: 2000px) {
             font-size: 2rem; 
             margin-right: 1em;
