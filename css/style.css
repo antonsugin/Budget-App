@@ -396,13 +396,13 @@ main {
     text-transform: capitalize; }
 
 .current-salary {
+  font-size: 1.5rem;
+  outline: none;
+  border-radius: 10px;
   color: #ECFFFF;
   text-align: center;
   padding: 2em;
   font-weight: 600;
-  font-size: 1.5rem;
-  outline: none;
-  border-radius: 10px;
   background: -webkit-linear-gradient(to bottom, #00CDAC, #02AAB0);
   background: linear-gradient(to bottom, #00CDAC, #02AAB0); }
   .current-salary:focus {
@@ -418,13 +418,13 @@ main {
         font-size: 3rem; } }
 
 .remain-income {
+  font-size: 1.5rem;
+  outline: none;
+  border-radius: 10px;
   color: #ECFFFF;
   text-align: center;
   padding: 2em;
   font-weight: 600;
-  font-size: 1.5rem;
-  outline: none;
-  border-radius: 10px;
   background: -webkit-linear-gradient(to bottom, #00CDAC, #02AAB0);
   background: linear-gradient(to bottom, #00CDAC, #02AAB0); }
   .remain-income:focus {
@@ -445,31 +445,31 @@ main {
   flex-wrap: wrap;
   margin-top: 5em; }
   .total__payments {
+    font-size: 1.5rem;
+    outline: none;
+    border-radius: 10px;
     color: #ECFFFF;
     text-align: center;
     padding: 2em;
     font-weight: 600;
-    font-size: 1.5rem;
-    outline: none;
-    border-radius: 10px;
     margin-top: 4.5em;
     background-color: #FD013C; }
     .total__payments:focus {
-      box-shadow: 0px 0px 15px #FD013C; }
+      box-shadow: 0px 0px 30px #FD013C; }
     .total__payments:active {
       box-shadow: 0px 0px 0px #FD013C; }
   .total__assets {
+    font-size: 1.5rem;
+    outline: none;
+    border-radius: 10px;
     color: #ECFFFF;
     text-align: center;
     padding: 2em;
     font-weight: 600;
-    font-size: 1.5rem;
-    outline: none;
-    border-radius: 10px;
     margin-top: 4.5em;
     background-color: #00C970; }
     .total__assets:focus {
-      box-shadow: 0px 0px 15px #00C970; }
+      box-shadow: 0px 0px 30px #00C970; }
     .total__assets:active {
       box-shadow: 0px 0px 0px #00C970; }
   .total__amount, .total__icon {
