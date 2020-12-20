@@ -38,17 +38,17 @@
 
 
 .current-salary {
-    font-size: 1.5rem;
-    text-align: center;
-    padding: 2em;
-    // margin-top: 1em;
-    font-weight: 600;
-    border-radius: 10px;
-    color: $color-primary-text;
-    // text-shadow: 1px 1px 0px $color-primary-text;
+    // font-size: 1.5rem;
+    // text-align: center;
+    // padding: 2em;
+    // font-weight: 600;
+    // border-radius: 10px;
+    // color: $color-primary-text;
+    // outline: none;
+    @include dataStyles;
     background: -webkit-linear-gradient(to bottom, #00CDAC, #02AAB0);
     background: linear-gradient(to bottom, #00CDAC, #02AAB0);
-    outline: none;
+    
 
     &:focus {
         box-shadow: 0px 0px 15px $color-primary-text;
@@ -69,15 +69,16 @@
 
 
 .remain-income {
-    font-size: 1.5rem;
-    text-align: center;
-    padding: 2em;
-    // margin-top: 1em;
-    color: $color-primary-text;
-    border-radius: 10px;
+    // font-size: 1.5rem;
+    // text-align: center;
+    // padding: 2em;
+    // color: $color-primary-text;
+    // border-radius: 10px;
+    // outline: none;
+    @include dataStyles;
     background: -webkit-linear-gradient(to bottom, #00CDAC, #02AAB0);
     background: linear-gradient(to bottom, #00CDAC, #02AAB0);
-    outline: none;
+    
 
     &:focus {
         box-shadow: 0px 0px 15px $color-primary-text;

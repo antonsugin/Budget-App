@@ -3,13 +3,30 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    margin-top: 5em;
 
     &__payments {
-        @include dataStyles ($color-total-pay);
+        @include dataStyles;
+        margin-top: 4.5em;
+        background-color: $color-total-pay;
+        &:focus {
+            box-shadow: 0px 0px 15px $color-total-pay;
+        }
+        &:active {
+            box-shadow: 0px 0px 0px $color-total-pay;
+        }
     }
 
     &__assets {
-        @include dataStyles ($color-invest);
+        @include dataStyles;
+        margin-top: 4.5em;
+        background-color: $color-invest;
+        &:focus {
+            box-shadow: 0px 0px 15px $color-invest;
+        }
+        &:active {
+            box-shadow: 0px 0px 0px $color-invest;
+        }
     }
     
 
