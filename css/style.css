@@ -1,3 +1,15 @@
+.add,
+.clear,
+.remove,
+.edit {
+  transition: all 0.6s ease; }
+
+.button__add-icon,
+.button__clear-icon,
+.button__remove-icon,
+.button__edit-icon {
+  transition: all 0.6s ease; }
+
 *,
 *::after,
 *::before {
@@ -42,7 +54,10 @@ main {
   margin: 5em 0 10em 0; }
 
 .button {
-  font-weight: 600; }
+  font-weight: 600;
+  transition: all 0.6s ease; }
+  .button:hover {
+    transition: all 0.6s ease; }
   .button--layout {
     display: flex;
     justify-content: space-evenly;
@@ -74,12 +89,26 @@ main {
       border-right-color: transparent;
       border-top-color: #2C5364;
       border-left-color: #2C5364; }
-    .button__clear:hover:after, .button__clear:hover:before {
+    .button__clear:hover::after, .button__clear:hover::before {
       width: 100%;
       height: 100%; }
-    .button__clear:focus:after, .button__clear:focus:before {
+    .button__clear:focus::after, .button__clear:focus::before {
       width: 100%;
       height: 100%; }
+    .button__clear:hover > .clear {
+      transition: all 0.6s ease;
+      transform: translateX(-200%);
+      color: transparent; }
+    .button__clear:hover > .button__clear-icon {
+      transition: all 0.6s ease;
+      transform: scale(1.2) translateX(-140%); }
+    .button__clear:focus > .clear {
+      transition: all 0.6s ease;
+      transform: translateX(-200%);
+      color: transparent; }
+    .button__clear:focus > .button__clear-icon {
+      transition: all 0.6s ease;
+      transform: scale(1.2) translateX(-140%); }
   .button__add {
     background: #11998e;
     background: -webkit-linear-gradient(to bottom, #38ef7d, #11998e);
@@ -107,12 +136,26 @@ main {
       border-right-color: transparent;
       border-top-color: #2C5364;
       border-left-color: #2C5364; }
-    .button__add:hover:after, .button__add:hover:before {
+    .button__add:hover::after, .button__add:hover::before {
       width: 100%;
       height: 100%; }
-    .button__add:focus:after, .button__add:focus:before {
+    .button__add:focus::after, .button__add:focus::before {
       width: 100%;
       height: 100%; }
+    .button__add:hover > .add {
+      transition: all 0.6s ease;
+      transform: translateX(-200%);
+      color: transparent; }
+    .button__add:hover > .button__add-icon {
+      transition: all 0.6s ease;
+      transform: scale(1.2) translateX(-120%); }
+    .button__add:focus > .add {
+      transition: all 0.6s ease;
+      transform: translateX(-200%);
+      color: transparent; }
+    .button__add:focus > .button__add-icon {
+      transition: all 0.6s ease;
+      transform: scale(1.2) translateX(-120%); }
   .button__remove {
     background: #FF416C;
     background: -webkit-linear-gradient(to bottom, #FF4B2B, #FF416C);
@@ -140,12 +183,26 @@ main {
       border-right-color: transparent;
       border-top-color: #2C5364;
       border-left-color: #2C5364; }
-    .button__remove:hover:after, .button__remove:hover:before {
+    .button__remove:hover::after, .button__remove:hover::before {
       width: 100%;
       height: 100%; }
-    .button__remove:focus:after, .button__remove:focus:before {
+    .button__remove:focus::after, .button__remove:focus::before {
       width: 100%;
       height: 100%; }
+    .button__remove:hover > .remove {
+      transition: all 0.6s ease;
+      transform: translateX(-200%);
+      color: transparent; }
+    .button__remove:hover > .button__remove-icon {
+      transition: all 0.6s ease;
+      transform: scale(1.2) translateX(-150%); }
+    .button__remove:focus > .remove {
+      transition: all 0.6s ease;
+      transform: translateX(-200%);
+      color: transparent; }
+    .button__remove:focus > .button__remove-icon {
+      transition: all 0.6s ease;
+      transform: scale(1.2) translateX(-150%); }
   .button__edit {
     background: #D66D75;
     background: -webkit-linear-gradient(to bottom, #E29587, #D66D75);
@@ -173,12 +230,26 @@ main {
       border-right-color: transparent;
       border-top-color: #2C5364;
       border-left-color: #2C5364; }
-    .button__edit:hover:after, .button__edit:hover:before {
+    .button__edit:hover::after, .button__edit:hover::before {
       width: 100%;
       height: 100%; }
-    .button__edit:focus:after, .button__edit:focus:before {
+    .button__edit:focus::after, .button__edit:focus::before {
       width: 100%;
       height: 100%; }
+    .button__edit:hover > .edit {
+      transition: all 0.6s ease;
+      transform: translateX(-200%);
+      color: transparent; }
+    .button__edit:hover > .button__edit-icon {
+      transition: all 0.6s ease;
+      transform: scale(1.2) translateX(-120%); }
+    .button__edit:focus > .edit {
+      transition: all 0.6s ease;
+      transform: translateX(-200%);
+      color: transparent; }
+    .button__edit:focus > .button__edit-icon {
+      transition: all 0.6s ease;
+      transform: scale(1.2) translateX(-120%); }
   .button__clear-icon, .button__add-icon, .button__remove-icon, .button__edit-icon, .button__add-income-icon {
     width: 15%;
     display: flex; }
@@ -240,7 +311,8 @@ main {
   .payment--wrapper {
     display: flex; }
   .payment__icon {
-    width: 5%; }
+    width: 5%;
+    display: flex; }
   .payment__icon img {
     width: 100%; }
   .payment > :not(:last-child) {
@@ -319,7 +391,8 @@ main {
   .asset--wrapper {
     display: flex; }
   .asset__icon {
-    width: 7%; }
+    width: 7%;
+    display: flex; }
   .asset__icon img {
     width: 100%; }
   .asset > :not(:last-child) {
@@ -445,6 +518,7 @@ main {
   flex-wrap: wrap;
   margin-top: 5em; }
   .total__payments {
+    box-shadow: 0px 10px 30px 4px rgba(0, 0, 0, 0.2), 10px 10px 30px 4px rgba(45, 78, 255, 0.25);
     font-size: 1.5rem;
     outline: none;
     border-radius: 10px;
@@ -459,6 +533,7 @@ main {
     .total__payments:active {
       box-shadow: 0px 0px 0px #FD013C; }
   .total__assets {
+    box-shadow: 0px 10px 30px 4px rgba(0, 0, 0, 0.2), 10px 10px 30px 4px rgba(45, 78, 255, 0.25);
     font-size: 1.5rem;
     outline: none;
     border-radius: 10px;

@@ -7,6 +7,18 @@
 .button {
     // color: $color-primary-text;
     font-weight: 600;
+    // transition: all 0.2s linear 0s;
+    transition: all 0.6s ease;
+    
+
+    
+
+    &:hover {
+
+        // text-indent: -200%;
+        // transition: all 0.2s linear 0s;
+        transition: all 0.6s ease;
+    }
     
     
 
@@ -17,23 +29,115 @@
     }
 
     &__clear {
+        // position: relative;
         @include bg-clear-button;
         @include button-effect;
+
+        &:hover > .clear {
+            transition: all 0.6s ease;
+            transform: translateX(-200%);
+            color: transparent;
+        }
+
+        &:hover > .button__clear-icon {
+            transition: all 0.6s ease;
+            transform: scale(1.2) translateX(-140%);
+        }
+
+        &:focus > .clear {
+            transition: all 0.6s ease;
+            transform: translateX(-200%);
+            color: transparent;
+        }
+
+        &:focus > .button__clear-icon {
+            transition: all 0.6s ease;
+            transform: scale(1.2) translateX(-140%);
+        }
     }
+
+    
+    
 
     &__add {
         @include bg-add-button;
         @include button-effect;
+
+        &:hover > .add {
+            transition: all 0.6s ease;
+            transform: translateX(-200%);
+            color: transparent;
+        }
+
+        &:hover > .button__add-icon {
+            transition: all 0.6s ease;
+            transform: scale(1.2) translateX(-120%);
+        }
+
+        &:focus > .add {
+            transition: all 0.6s ease;
+            transform: translateX(-200%);
+            color: transparent;
+        }
+
+        &:focus > .button__add-icon {
+            transition: all 0.6s ease;
+            transform: scale(1.2) translateX(-120%);
+        }
     }
 
     &__remove {
         @include bg-remove-button;
         @include button-effect;
+
+        &:hover > .remove {
+            transition: all 0.6s ease;
+            transform: translateX(-200%);
+            color: transparent;
+        }
+
+        &:hover > .button__remove-icon {
+            transition: all 0.6s ease;
+            transform: scale(1.2) translateX(-150%);
+        }
+
+        &:focus > .remove {
+            transition: all 0.6s ease;
+            transform: translateX(-200%);
+            color: transparent;
+        }
+
+        &:focus > .button__remove-icon {
+            transition: all 0.6s ease;
+            transform: scale(1.2) translateX(-150%);
+        }
     }
 
     &__edit {
         @include bg-edit-button;
         @include button-effect;
+
+        &:hover > .edit {
+            transition: all 0.6s ease;
+            transform: translateX(-200%);
+            color: transparent;
+        }
+
+        &:hover > .button__edit-icon {
+            transition: all 0.6s ease;
+            transform: scale(1.2) translateX(-120%);
+        }
+
+        &:focus > .edit {
+            transition: all 0.6s ease;
+            transform: translateX(-200%);
+            color: transparent;
+        }
+
+        &:focus > .button__edit-icon {
+            transition: all 0.6s ease;
+            transform: scale(1.2) translateX(-120%);
+        }
     }
 
     &__clear-icon,

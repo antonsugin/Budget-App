@@ -7,6 +7,7 @@
 
     &__payments {
 
+        @include box-shadow;
         @include dataStyles;
         margin-top: 4.5em;
         background-color: $color-total-pay;
@@ -20,7 +21,8 @@
     }
 
     &__assets {
-
+        
+        @include box-shadow;
         @include dataStyles;
         margin-top: 4.5em;
         background-color: $color-invest;
