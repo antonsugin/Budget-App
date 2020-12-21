@@ -4,6 +4,8 @@
     padding: .5em;
     @include box-shadow;
     border-radius: 4rem;
+
+    position: relative;
     
 
     &--layout {
@@ -57,6 +59,66 @@
         // justify-content: space-evenly; 
     }
 }
+
+.payment {
+
+    // &::before {
+    //     position: absolute;
+    //     content: '\00A0';
+    //     background-color: red;
+    //     top: 0;
+    //     width: 50%;
+    //     height: 5%;
+    //     transition: all 0.6s ease;
+    // }
+
+    &::after {
+        position: absolute;
+        content: '\00A0';
+        left: 95%;
+        // background-color: black;
+        width: 0;
+        height: 0;
+        border: 3px solid transparent;
+        transition: all 0.6s ease;
+    }
+    
+    &:hover::after {
+        width: 95%;
+        height: 4%;
+        left: 0;
+        border: 3px solid #2D3E50;
+    }
+
+    &:hover {
+        transition: all .6s ease 1s;
+        opacity: 0;        
+    }
+
+}
+
+
+// @keyframes myAnimation{
+//     0%{
+//       opacity: 1;
+//       transform: rotateX(90deg);
+//     }
+//     50%{
+//       opacity: 0.5;
+//       transform: rotateX(0deg);
+//     }
+//     100%{
+//       display: none;
+//       opacity: 0;
+//       transform: rotateX(90deg);
+//     }
+//   }
+  
+//   #myelement{
+//       animation-name: myAnimation;
+//       animation-duration: 2000ms;
+//       animation-fill-mode: forwards;
+//   }
 
 
 

@@ -311,7 +311,8 @@ main {
   font-size: 3.5rem;
   padding: .5em;
   box-shadow: 0px 10px 30px 4px rgba(0, 0, 0, 0.2), 10px 10px 30px 4px rgba(45, 78, 255, 0.25);
-  border-radius: 4rem; }
+  border-radius: 4rem;
+  position: relative; }
   .payment--layout {
     margin-top: 1em;
     display: flex;
@@ -343,6 +344,25 @@ main {
     .chart {
       width: 100%;
       margin-top: 5em; } }
+
+.payment::after {
+  position: absolute;
+  content: '\00A0';
+  left: 95%;
+  width: 0;
+  height: 0;
+  border: 3px solid transparent;
+  transition: all 0.6s ease; }
+
+.payment:hover::after {
+  width: 95%;
+  height: 4%;
+  left: 0;
+  border: 3px solid #2D3E50; }
+
+.payment:hover {
+  transition: all .6s ease 1s;
+  opacity: 0; }
 
 .initial {
   font-size: 2.5rem;
