@@ -327,6 +327,25 @@ main {
     width: 100%; }
   .payment > :not(:last-child) {
     padding-right: .5em; }
+  .payment::after {
+    position: absolute;
+    content: '\00A0';
+    left: 95%;
+    width: 0;
+    height: 0;
+    border: 3px solid transparent;
+    transition: all 0.6s ease; }
+  .payment:hover::after {
+    width: 95%;
+    height: 4%;
+    left: 0;
+    border: 3px solid #2D3E50; }
+  .payment:hover {
+    transition: all .6s ease 1s;
+    opacity: 0; }
+  .payment:focus {
+    box-shadow: 0 0 35px black;
+    outline: none; }
   .payment:active {
     box-shadow: 0 -20px 15px -10px rgba(255, 255, 0, 0.3) inset, 0 20px 15px -10px rgba(255, 255, 0, 0.3) inset, 0 0 10px rgba(0, 0, 0, 0.1); }
   @media only screen and (max-width: 2000px) {
@@ -344,25 +363,6 @@ main {
     .chart {
       width: 100%;
       margin-top: 5em; } }
-
-.payment::after {
-  position: absolute;
-  content: '\00A0';
-  left: 95%;
-  width: 0;
-  height: 0;
-  border: 3px solid transparent;
-  transition: all 0.6s ease; }
-
-.payment:hover::after {
-  width: 95%;
-  height: 4%;
-  left: 0;
-  border: 3px solid #2D3E50; }
-
-.payment:hover {
-  transition: all .6s ease 1s;
-  opacity: 0; }
 
 .initial {
   font-size: 2.5rem;
@@ -443,6 +443,9 @@ main {
   .asset:hover {
     transition: all .6s ease 1s;
     opacity: 0; }
+  .asset:focus {
+    box-shadow: 0 0 35px black;
+    outline: none; }
   @media only screen and (max-width: 2000px) {
     .asset {
       font-size: 2.5rem; } }

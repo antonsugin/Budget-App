@@ -33,6 +33,34 @@
         
     }
 
+    &::after {
+        position: absolute;
+        content: '\00A0';
+        left: 95%;
+        // background-color: black;
+        width: 0;
+        height: 0;
+        border: 3px solid transparent;
+        transition: all 0.6s ease;
+    }
+    
+    &:hover::after {
+        width: 95%;
+        height: 4%;
+        left: 0;
+        border: 3px solid #2D3E50;
+    }
+
+    &:hover {
+        transition: all .6s ease 1s;
+        opacity: 0;        
+    }
+
+    &:focus {
+        box-shadow: 0 0 35px black;
+        outline: none;
+    }
+
     &:active {
         box-shadow: 0 -20px 15px -10px rgba(255, 255, 0, 0.3) inset,
                     0 20px 15px -10px rgba(255, 255, 0, 0.3) inset,
@@ -59,44 +87,6 @@
         // justify-content: space-evenly; 
     }
 }
-
-.payment {
-
-    // &::before {
-    //     position: absolute;
-    //     content: '\00A0';
-    //     background-color: red;
-    //     top: 0;
-    //     width: 50%;
-    //     height: 5%;
-    //     transition: all 0.6s ease;
-    // }
-
-    &::after {
-        position: absolute;
-        content: '\00A0';
-        left: 95%;
-        // background-color: black;
-        width: 0;
-        height: 0;
-        border: 3px solid transparent;
-        transition: all 0.6s ease;
-    }
-    
-    &:hover::after {
-        width: 95%;
-        height: 4%;
-        left: 0;
-        border: 3px solid #2D3E50;
-    }
-
-    &:hover {
-        transition: all .6s ease 1s;
-        opacity: 0;        
-    }
-
-}
-
 
 // @keyframes myAnimation{
 //     0%{
