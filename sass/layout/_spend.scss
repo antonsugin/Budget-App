@@ -19,9 +19,10 @@
     &--wrapper {
         width: 100%;
         margin-top: 5em;
+        padding-bottom: 6.5em;
     }
 
-    @include box-label;
+    @include box-label-1;
 
     @include mediaInitialSpend;
 }
